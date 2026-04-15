@@ -13,4 +13,8 @@
     <string name="friends">Friends</string>
     <string name="no_upcoming_events">No upcoming events</string>
 
+    <string name="interested_events">Interested Events</string>
+    <string name="attending_events">Attending Events</string>
+    <string name="my_profile">My Profile</string>
+
 </resources>

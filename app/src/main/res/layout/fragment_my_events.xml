@@ -1,45 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".LoginActivity">
-
+    android:orientation="vertical">
+    tools:context=".MyEventsFragment">
 
     <LinearLayout
-        android:id="@+id/btn_container"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_login"
-
+            android:id="@+id/btn_interested"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/login"/>
+            android:text="@string/interested_events"/>
 
         <Button
-            android:id="@+id/btn_register"
-
+            android:id="@+id/btn_attending"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/register"/>
+            android:text="@string/attending_events"/>
+
     </LinearLayout>
 
-
-    <LinearLayout
-        android:id="@+id/activity_fragment_container"
-
+    <Button
+        android:id="@+id/btn_my_profile"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"/>
+        android:layout_height="wrap_content"
+        android:text="@string/my_profile"/>
 
 </LinearLayout>
