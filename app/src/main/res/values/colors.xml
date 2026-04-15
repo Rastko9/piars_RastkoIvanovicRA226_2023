@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="aqua_primary">#085950</color>
-    <color name="aqua_button">#0b786b</color>
+    <color name="aqua_button">#0B786B</color>
+    <color name="gray_disabled">#9E9E9E</color>
 
 </resources>

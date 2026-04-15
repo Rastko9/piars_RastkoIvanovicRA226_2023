@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">EventsApp</string>
+
     <string name="login">Login</string>
     <string name="register">Register</string>
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
     <string name="email_hint">Email</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="events">Events</string>
+    <string name="my_events">My Events</string>
+    <string name="friends">Friends</string>
+    <string name="no_upcoming_events">No upcoming events</string>
 
 </resources>
