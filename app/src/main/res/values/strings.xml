@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Events App</string>
+    <string name="app_name">EventsApp</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+
 </resources>
