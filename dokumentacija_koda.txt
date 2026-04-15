@@ -1,0 +1,45 @@
+LoginActivity - (MainActivity) - 2*btn: Login, Register + ucitava fragmente
+EventsActivity - welcome poruka + fragmenti + navigacija
+InterestedEventsActivity - samo prikazuje "Interested Events"
+AttendingEventsActivity - samo prikazuje "Attending Events"
+ProfileActivity - (My Profile) - 2*btn: Password, End Session + prikazuje Username, Email
+PasswordActivity - forma za promenu šifre (Current, New password + btn save)
+
+LoginFragment - btn Login + forma za Username, Password + dozvoljeno samo u:admin, p:admin
+RegisterFragment - btn Register + forma za Username, Email, Password + sva polja su obavezna
+EventsFragment - samo prikazuje "No upcoming events" 
+MyEventsFragment - 3*btn: Interested Events, Attending Events, My Profile
+
+navigacija kroz projekat:
+LoginActivity
+[Login btn] -> LoginFragment
+	[Login submit] -> EventsActivity (salje username + email kroz Bundle)
+[Register btn] -> RegisterFragment
+ 	[Register submit] -> EventsActivity (salje username + email kroz Bundle)
+
+EventsActivity
+[Events btn] -> EventsFragment (replace u kontejneru)
+[My Events btn] -> MyEventsFragment (replace u kontejneru)
+	[Interested Events] -> InterestedEventsActivity
+	[Attending Events] -> AttendingEventsActivity 
+	[My Profile] -> ProfileActivity (salje username + email)
+        	[Password] -> PasswordActivity
+        		[Save] -> Toast poruka + finish()
+        	[End Session] -> LoginActivity (FLAG_ACTIVITY_CLEAR_TASK)
+
+
+prenos podataka:
+Intent + Bundle - koristi se za prenos username-a i email-a izmedju aktivnosti
+bundle.putString("username", username) za slanje
+getIntent().getExtras().getString("username") za primanje
+u MyEventsFragment: getActivity().getIntent().getExtras() za pristup podacima iz roditeljske aktivnosti
+
+
+neki od "koncepata":
+Fragment transakcije: getSupportFragmentManager().beginTransaction().replace().commit()
+Visibility: setVisibility(View.INVISIBLE) za sakrivanje dugmadi na LoginActivity
+finish(): zatvara trenutnu aktivnost i vraca se na prethodnu
+FLAG_ACTIVITY_CLEAR_TASK: cisti ceo stek pri End Session
+Toast poruka - iskakajuca poruka
+
+
