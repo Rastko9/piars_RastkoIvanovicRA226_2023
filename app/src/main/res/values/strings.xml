@@ -17,4 +17,13 @@
     <string name="attending_events">Attending Events</string>
     <string name="my_profile">My Profile</string>
 
+    <string name="password">Password</string>
+    <string name="end_session">End Session</string>
+
+    <string name="change_password">Change password</string>
+    <string name="current_password_hint">Current password</string>
+    <string name="new_password_hint">New password</string>
+    <string name="save">Save</string>
+    <string name="password_changed">Password successfully changed</string>
+
 </resources>

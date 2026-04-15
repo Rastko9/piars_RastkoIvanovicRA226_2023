@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view)
             {
                 buttonContainer.setVisibility(View.INVISIBLE);
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new LoginFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.login_fragment_container, new LoginFragment()).commit();
             }
         });
 
@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view)
             {
                 buttonContainer.setVisibility(View.INVISIBLE);
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new RegisterFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.login_fragment_container, new RegisterFragment()).commit();
             }
         });
 
